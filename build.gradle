@@ -1,0 +1,165 @@
+// 定义脚本使用资源
+buildscript {
+    // 引入所需要的文件依赖库
+    apply from: 'dependencies.gradle'
+    // 脚本资源仓库
+    repositories {
+        maven { url = 'https://maven.aliyun.com/nexus/content/groups/public' }
+    }
+    // spring-boot插件
+    dependencies {
+        classpath libraries.'spring-boot-gradle-plugin'
+    }
+}
+//allprojects {
+//    group project_group
+//    version project_version
+//    apply plugin: 'java'
+//    apply plugin: 'idea'
+//}
+// 组织名称
+group project_group
+// 项目版本
+version project_version
+
+// 导入依赖配置
+apply from: 'dependencies.gradle'
+
+// 获取env环境变量
+def env = System.getProperty("env") ?: 'dev'
+
+// 配置子项目
+subprojects {
+    // 子模块插件
+    apply plugin: 'java'
+    apply plugin: 'idea'
+    // 引入spring插件
+    apply plugin: 'org.springframework.boot'
+    // 版本号管理
+    apply plugin: 'io.spring.dependency-management'
+    sourceCompatibility = project_jdk        // 源代码版本
+    targetCompatibility = project_jdk        // 生成类版本
+    // 配置gradle仓库
+    repositories {
+        mavenLocal()
+//        maven { url = "https://maven.aliyun.com/nexus/content/groups/public" }
+//        mavenCentral()
+//        jcenter()
+
+        maven { url 'https://maven.aliyun.com/nexus/content/groups/public/' }
+        maven { url 'https://repo1.maven.org/maven2/' }
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+        maven {
+            url 'https://repo.maven.apache.org/maven2/'
+        }
+        google()
+    }
+    // 版本控制插件
+    dependencyManagement {
+        imports {
+            // spring-cloud依赖管理
+            mavenBom libraries.'spring-cloud-dependencies'
+            // spring-cloud-alibaba依赖管理
+            mavenBom libraries.'spring-cloud-alibaba-dependencies'
+        }
+    }
+    // 公共依赖库管理
+    dependencies {
+        // 热部署工具
+        implementation('org.springframework.boot:spring-boot-devtools')
+        // 测试环境相关依赖
+        testImplementation('org.springframework.boot:spring-boot-starter-test') {
+            // 移除Junit4
+            exclude group: 'junit', module: 'junit'
+        }
+        // 绑定为Junit5运行(junit5测试组件)
+        testImplementation(enforcedPlatform(libraries.'junit-bom'))
+        testImplementation(libraries.'junit-platform-commons')
+        testImplementation(libraries.'junit-platform-engine')
+        testImplementation(libraries.'junit-jupiter-api')
+        testImplementation(libraries.'junit-vintage-engine')
+        testImplementation(libraries.'junit-jupiter-engine')
+        testImplementation(libraries.'junit-platform-launcher')
+        // lombok 插件依赖 编译时生效
+        compileOnly(libraries.'lombok')
+        // 注解时生效
+        annotationProcessor(libraries.'lombok')
+    }
+    // 源代码目录配置
+    sourceSets {
+        main {
+            java { srcDirs = ['src/main/java'] }
+            resources { srcDirs = ['src/main/resources', "src/main/profiles/$env"] }
+        }
+        test {
+            java { srcDirs = ['src/test/java'] }
+            resources { srcDirs = ['src/test/resources'] }
+        }
+    }
+    // 配置测试任务
+    test {
+        // 使用Junit测试平台
+        useJUnitPlatform()
+    }
+    // 源代码的打包任务
+    task sourceJar(type: Jar, dependsOn: classes) { // 源代码的打包任务
+        archiveClassifier = 'sources'        // 设置文件的后缀
+        from sourceSets.main.allSource        // 所有源代码的读取路径
+    }
+    // javadoc文档打包路径
+    task javadocTask(type: Javadoc) {
+        // 设置文件编码
+        options.encoding = 'UTF-8'
+        // 定义所有的源代码
+        source = sourceSets.main.allJava
+    }
+    // 先生成JavaDoc再打包
+    task javadocJar(type: Jar, dependsOn: javadocTask) {
+        archiveClassifier = 'javadoc'        // 文件标记类型
+        from javadocTask.destinationDir        // 通过JavadocTask任务中找到目标路径
+    }
+    // 文档编码配置
+    tasks.withType(Javadoc) {
+        options.encoding = 'UTF-8'
+    }
+    // 编译编码配置
+    tasks.withType(JavaCompile) {
+        options.encoding = 'UTF-8'
+    }
+    // 最终的代码打包任务
+    artifacts {
+        archives sourceJar            // 源代码打包
+        archives javadocJar            // javadoc打包
+    }
+    // 在所有的操作准备好后触发
+    gradle.taskGraph.whenReady {
+        // 找出所有任务
+        tasks.each { task ->
+            // 如果没有test任务
+            if (task.name.contains("test")) {
+                // enable设置为true表示要执行测试任务
+                task.enabled = true
+            }
+        }
+    }
+    // 编码设置
+    [compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+}
+// 配置子模块
+project(":hong-common") {
+    // 配置需要的依赖库
+    dependencies {
+        implementation("org.springframework.boot:spring-boot-starter-web")
+    }
+}
+project(":hong-provider") {
+    // 配置需要的依赖库
+    dependencies {
+        // 导入公共子模块
+        implementation(project(':hong-common'))
+        implementation(libraries.'mybatis-plus-boot-starter')
+        implementation(libraries.'mysql-connector-java')
+        implementation(libraries.'druid')
+    }
+}

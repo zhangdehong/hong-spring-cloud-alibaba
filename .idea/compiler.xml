@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$PROJECT_DIR$/../../../maven/repository/org/projectlombok/lombok/1.18.20/lombok-1.18.20.jar" />
+        </processorPath>
+        <module name="hong-spring-cloud-alibaba.hong-provider.main" />
+        <module name="hong-spring-cloud-alibaba.hong-common.main" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="11">
+      <module name="com.hong.hong-spring-cloud-alibaba.hong-provider.main" target="11" />
+      <module name="com.hong.hong-spring-cloud-alibaba.hong-provider.test" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

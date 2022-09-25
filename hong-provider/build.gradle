@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+}
+
+group project_group
+version project_version
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation  group: 'junit', name: 'junit', version: '4.12'
+}
+
+test {
+    useJUnitPlatform()
+}

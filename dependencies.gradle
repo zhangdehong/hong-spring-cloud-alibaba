@@ -1,0 +1,58 @@
+// 定义全部的依赖库版本号
+ext.versions = [
+        // springboot版本
+        springboot           : '2.3.12.RELEASE',
+        // springcloud版本
+        springcloud          : 'Hoxton.SR12',
+        // alibaba springcloud
+        alibabacloud         : '2.2.7.RELEASE',
+        // lombok版本
+        lombok               : '1.18.20',
+        // junit测试版本
+        junit                : '5.6.3',
+        // junit测试运行平台版本
+        junitPlatformLauncher: '1.6.3',
+        // mybatisPlus版本
+        mybatisPlus          : '3.4.3',
+        // MySQL驱动版本
+        mysql                : '8.0.29',
+        // 德鲁伊版本
+        druid                : '1.2.9',
+
+]
+// 依赖库引入配置
+ext.libraries = [
+        'spring-boot-gradle-plugin'        :
+                "org.springframework.boot:spring-boot-gradle-plugin:${versions.springboot}",
+        'spring-cloud-dependencies'        :
+                "org.springframework.cloud:spring-cloud-dependencies:${versions.springcloud}",
+        'spring-cloud-alibaba-dependencies':
+                "com.alibaba.cloud:spring-cloud-alibaba-dependencies:${versions.alibabacloud}",
+        // 测试用例相关依赖
+        'junit-jupiter-api'                :
+                "org.junit.jupiter:junit-jupiter-api:${versions.junit}",
+        'junit-vintage-engine'             :
+                "org.junit.jupiter:junit-jupiter-engine:${versions.junit}",
+        'junit-jupiter-engine'             :
+                "org.junit.jupiter:junit-jupiter-engine:${versions.junit}",
+        'junit-platform-launcher'          :
+                "org.junit.platform:junit-platform-launcher:${versions.junitPlatformLauncher}",
+        'junit-platform-engine'            :
+                "org.junit.platform:junit-platform-engine:${versions.junitPlatformLauncher}",
+        'junit-jupiter-params'             :
+                "org.junit.jupiter:junit-jupiter-params:${versions.junit}",
+        'junit-bom'                        :
+                "org.junit:junit-bom:${versions.junit}",
+        'junit-platform-commons'           :
+                "org.junit.platform:junit-platform-commons:${versions.junitPlatformLauncher}",
+        'lombok'                           :
+                "org.projectlombok:lombok:${versions.lombok}",
+        // orm相关依赖
+        'mybatis-plus-boot-starter'        : "com.baomidou:mybatis-plus-boot-starter:${versions.mybatisPlus}",
+        'mysql-connector-java'             : "mysql:mysql-connector-java:${versions.mysql}",
+        'druid'                            : "com.alibaba:druid:${versions.druid}"
+//                'implementation \'com.alibaba:druid:1.2.11\''
+//        implementation 'mysql:mysql-connector-java:8.0.29'
+//        implementation 'com.baomidou:mybatis-plus-boot-starter:3.5.2'
+
+]

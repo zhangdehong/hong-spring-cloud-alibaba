@@ -1,0 +1,3 @@
+rootProject.name = 'hong-spring-cloud-alibaba'
+include 'hong-common'
+include 'hong-provider'
