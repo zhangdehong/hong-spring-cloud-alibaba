@@ -11,12 +11,12 @@ buildscript {
         classpath libraries.'spring-boot-gradle-plugin'
     }
 }
-//allprojects {
-//    group project_group
-//    version project_version
-//    apply plugin: 'java'
-//    apply plugin: 'idea'
-//}
+allprojects {
+    group 'com.hong'
+    version '1.0.0'
+    apply plugin: 'java-library'
+    apply plugin: 'idea'
+}
 // 组织名称
 group project_group
 // 项目版本
@@ -31,7 +31,7 @@ def env = System.getProperty("env") ?: 'dev'
 // 配置子项目
 subprojects {
     // 子模块插件
-    apply plugin: 'java'
+    apply plugin: 'java-library'
     apply plugin: 'idea'
     // 引入spring插件
     apply plugin: 'org.springframework.boot'
@@ -150,16 +150,26 @@ subprojects {
 project(":hong-common") {
     // 配置需要的依赖库
     dependencies {
-        implementation("org.springframework.boot:spring-boot-starter-web")
+        api 'org.springframework.boot:spring-boot-starter-web:2.3.12.RELEASE'  // SpringBoot依赖
     }
 }
+// dept provider
 project(":hong-provider") {
     // 配置需要的依赖库
     dependencies {
+//        implementation("org.springframework.boot:spring-boot-starter-web") // SpringBoot依赖
         // 导入公共子模块
-        implementation(project(':hong-common'))
+        implementation project(':hong-common')
         implementation(libraries.'mybatis-plus-boot-starter')
         implementation(libraries.'mysql-connector-java')
         implementation(libraries.'druid')
+
     }
 }
+// 消费端模块
+project(":consumer-spring-boot-80"){
+    // 配置依赖的库
+    dependencies {
+        implementation project(':hong-common')
+
+    }}
