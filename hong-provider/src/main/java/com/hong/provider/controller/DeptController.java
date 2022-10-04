@@ -23,7 +23,7 @@ public class DeptController {
     }
 
     @PostMapping("add")
-    public Object add (DeptDTO deptDTO) {
+    public Object add (@RequestBody DeptDTO deptDTO) {
         return deptService.add(deptDTO);
     }
 

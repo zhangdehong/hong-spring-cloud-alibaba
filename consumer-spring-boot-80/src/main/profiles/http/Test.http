@@ -1,0 +1,13 @@
+GET http://localhost:80/consumer/dept/get?deptNo=1
+
+
+###
+GET http://localhost:80/consumer/dept/list
+
+
+###
+GET http://localhost:80/consumer/dept/split?number=1&limit=1&column=dname&keyword
+
+
+###
+GET http://localhost:80/consumer/dept/add?dname=人脸识别&loc=兰州
