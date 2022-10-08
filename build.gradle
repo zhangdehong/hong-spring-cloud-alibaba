@@ -163,6 +163,7 @@ project(":hong-provider") {
         implementation(libraries.'mybatis-plus-boot-starter')
         implementation(libraries.'mysql-connector-java')
         implementation(libraries.'druid')
+        implementation(libraries.'springfox-boot-starter')
 
     }
 }

@@ -18,6 +18,8 @@ ext.versions = [
         mysql                : '8.0.29',
         // 德鲁伊版本
         druid                : '1.2.9',
+        // Swagger版本号
+        swagger              : '3.0.0'
 
 ]
 // 依赖库引入配置
@@ -50,7 +52,8 @@ ext.libraries = [
         // orm相关依赖
         'mybatis-plus-boot-starter'        : "com.baomidou:mybatis-plus-boot-starter:${versions.mybatisPlus}",
         'mysql-connector-java'             : "mysql:mysql-connector-java:${versions.mysql}",
-        'druid'                            : "com.alibaba:druid:${versions.druid}"
+        'druid'                            : "com.alibaba:druid:${versions.druid}",
+        'springfox-boot-starter'           : "io.springfox:springfox-boot-starter:${versions.swagger}"
 //                'implementation \'com.alibaba:druid:1.2.11\''
 //        implementation 'mysql:mysql-connector-java:8.0.29'
 //        implementation 'com.baomidou:mybatis-plus-boot-starter:3.5.2'
