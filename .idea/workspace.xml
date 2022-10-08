@@ -5,16 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b9eb959-2180-4938-bfaf-9573b18f9cee" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer-spring-boot-80/src/main/java/com/hong/consumer/interceptor/CloudServiceHttpInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hong-provider/src/main/java/com/hong/provider/config/SwaggerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hong-provider/src/main/java/com/hong/provider/config/SwaggerWebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hong-provider/src/test/java/com/hong/provider/test/TestCreatePassword.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer-spring-boot-80/src/main/java/com/hong/consumer/config/RestTemplateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-spring-boot-80/src/main/java/com/hong/consumer/config/RestTemplateConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/dependencies.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hong-provider/src/main/java/com/hong/provider/controller/DeptController.java" beforeDir="false" afterPath="$PROJECT_DIR$/hong-provider/src/main/java/com/hong/provider/controller/DeptController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,31 +39,7 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="hong-spring-cloud-alibaba" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="hong-spring-cloud-alibaba" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="hong-spring-cloud-alibaba" type="f1a62948:ProjectNode" />
                 <item name="hong-provider" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="hong-spring-cloud-alibaba" type="f1a62948:ProjectNode" />
-                <item name="hong-provider" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="hong-spring-cloud-alibaba" type="f1a62948:ProjectNode" />
-                <item name="hong-provider" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
@@ -83,38 +53,6 @@
                 <item name="hong-provider" type="2d1252cf:ModuleNode" />
                 <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
                 <item name="compileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="hong-spring-cloud-alibaba" type="f1a62948:ProjectNode" />
-                <item name="hong-provider" type="2d1252cf:ModuleNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-                <item name="compileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
-                <item name="io.springfox:springfox-boot-starter:3.0.0" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="hong-spring-cloud-alibaba" type="f1a62948:ProjectNode" />
-                <item name="hong-provider" type="2d1252cf:ModuleNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-                <item name="compileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
-                <item name="project hong-common" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="hong-spring-cloud-alibaba" type="f1a62948:ProjectNode" />
-                <item name="hong-provider" type="2d1252cf:ModuleNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-                <item name="compileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
-                <item name="project hong-common" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
-                <item name="org.springframework.boot:spring-boot-starter-web:2.3.12.RELEASE" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="hong-spring-cloud-alibaba" type="f1a62948:ProjectNode" />
-                <item name="hong-provider" type="2d1252cf:ModuleNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-                <item name="runtimeClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
               </path>
             </expand>
             <select />
@@ -174,6 +112,19 @@
   }
 }]]></component>
   <component name="RunManager" selected="Spring Boot.ProviderApplication">
+    <configuration name="TestCreatePassword" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.hong.provider.test.TestCreatePassword" />
+      <module name="hong-spring-cloud-alibaba.hong-provider.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hong.provider.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="hong-spring-cloud-alibaba [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -219,9 +170,6 @@
     <configuration name="Test | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/consumer-spring-boot-80/src/main/profiles/http/Test.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="generated-requests | #14" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="14" requestIdentifier="#14" runType="Run single request">
-      <method v="2" />
-    </configuration>
     <configuration name="ProviderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="hong-spring-cloud-alibaba.hong-provider.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.hong.provider.ProviderApplication" />
@@ -244,11 +192,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestCreatePassword" />
         <item itemvalue="Gradle.hong-spring-cloud-alibaba [clean]" />
         <item itemvalue="Gradle.hong-spring-cloud-alibaba:hong-provider [clean]" />
         <item itemvalue="HTTP Request.Test | #1" />
         <item itemvalue="Spring Boot.StartConsumerApplication" />
-        <item itemvalue="HTTP Request.generated-requests | #14" />
       </list>
     </recent_temporary>
   </component>
@@ -264,7 +212,7 @@
       <workItem from="1664379250772" duration="5014000" />
       <workItem from="1664454603654" duration="543000" />
       <workItem from="1664455235560" duration="6807000" />
-      <workItem from="1664865396582" duration="19053000" />
+      <workItem from="1664865396582" duration="25192000" />
     </task>
     <task id="LOCAL-00001" summary="修改java-library和api使用问题，增加consumer">
       <created>1664383947914</created>
@@ -280,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664870470651</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="增加Swagger">
+      <created>1665197344374</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1665197344374</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,7 +255,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="修改java-library和api使用问题，增加consumer" />
     <MESSAGE value="增加consumer对外暴露接口验证" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加consumer对外暴露接口验证" />
+    <MESSAGE value="增加Swagger" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加Swagger" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

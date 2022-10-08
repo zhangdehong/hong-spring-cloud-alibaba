@@ -164,6 +164,7 @@ project(":hong-provider") {
         implementation(libraries.'mysql-connector-java')
         implementation(libraries.'druid')
         implementation(libraries.'springfox-boot-starter')
+        implementation('org.springframework.boot:spring-boot-starter-security')
 
     }
 }
