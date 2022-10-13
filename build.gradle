@@ -169,9 +169,18 @@ project(":hong-provider") {
     }
 }
 // 消费端模块
-project(":consumer-spring-boot-80"){
+project(":consumer-spring-boot-80") {
     // 配置依赖的库
     dependencies {
         implementation project(':hong-common')
 
-    }}
+    }
+}
+// nacos 核心模块
+project(":nacos-example") {
+    dependencies {
+        implementation project(':hong-common')
+        // nacos 标准模块
+        implementation(libraries.'nacos-client')
+    }
+}

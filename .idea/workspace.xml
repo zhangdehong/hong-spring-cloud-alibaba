@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b9eb959-2180-4938-bfaf-9573b18f9cee" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/hong-provider/src/main/java/com/hong/provider/config/SwaggerWebSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hong-provider/src/test/java/com/hong/provider/test/TestCreatePassword.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nacos-example/src/main/java/com/hong/nacos/config/NacosConfigListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nacos-example/src/main/java/com/hong/nacos/config/PublishNacosConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/dependencies.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,36 +86,67 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelOrder2": "2",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RequestMappingsPanelWidth2": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "false",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "11",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.22053675",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "spring.configuration.checksum": "9407910bb1980375e45e63f24b0a8508",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelOrder2&quot;: &quot;2&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth2&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.22053675&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;9407910bb1980375e45e63f24b0a8508&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mariadb",
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mariadb&quot;,
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
-  <component name="RunManager" selected="Spring Boot.ProviderApplication">
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.hong.nacos.config" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.NacosConfigListener">
+    <configuration name="NacosConfigListener" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.hong.nacos.config.NacosConfigListener" />
+      <module name="hong-spring-cloud-alibaba.nacos-example.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hong.nacos.config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PublishNacosConfig" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.hong.nacos.config.PublishNacosConfig" />
+      <module name="hong-spring-cloud-alibaba.nacos-example.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hong.nacos.config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestCreatePassword" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.hong.provider.test.TestCreatePassword" />
       <module name="hong-spring-cloud-alibaba.hong-provider.test" />
@@ -167,9 +202,6 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Test | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/consumer-spring-boot-80/src/main/profiles/http/Test.http" requestIdentifier="#1" runType="Run single request">
-      <method v="2" />
-    </configuration>
     <configuration name="ProviderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="hong-spring-cloud-alibaba.hong-provider.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.hong.provider.ProviderApplication" />
@@ -177,26 +209,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StartConsumerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="hong-spring-cloud-alibaba.consumer-spring-boot-80.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hong.consumer.StartConsumerApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hong.consumer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.NacosConfigListener" />
+        <item itemvalue="Application.PublishNacosConfig" />
         <item itemvalue="Application.TestCreatePassword" />
         <item itemvalue="Gradle.hong-spring-cloud-alibaba [clean]" />
         <item itemvalue="Gradle.hong-spring-cloud-alibaba:hong-provider [clean]" />
-        <item itemvalue="HTTP Request.Test | #1" />
-        <item itemvalue="Spring Boot.StartConsumerApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -212,7 +231,8 @@
       <workItem from="1664379250772" duration="5014000" />
       <workItem from="1664454603654" duration="543000" />
       <workItem from="1664455235560" duration="6807000" />
-      <workItem from="1664865396582" duration="25192000" />
+      <workItem from="1664865396582" duration="28746000" />
+      <workItem from="1665386248064" duration="33101000" />
     </task>
     <task id="LOCAL-00001" summary="修改java-library和api使用问题，增加consumer">
       <created>1664383947914</created>
@@ -235,7 +255,21 @@
       <option name="project" value="LOCAL" />
       <updated>1665197344374</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="增加Swagger登陆保护">
+      <created>1665206776578</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1665206776578</updated>
+    </task>
+    <task id="LOCAL-00005" summary="增加nacos 启动说明">
+      <created>1665394269267</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1665394269267</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,7 +290,9 @@
     <MESSAGE value="修改java-library和api使用问题，增加consumer" />
     <MESSAGE value="增加consumer对外暴露接口验证" />
     <MESSAGE value="增加Swagger" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加Swagger" />
+    <MESSAGE value="增加Swagger登陆保护" />
+    <MESSAGE value="增加nacos 启动说明" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加nacos 启动说明" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

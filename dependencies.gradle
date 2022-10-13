@@ -19,7 +19,9 @@ ext.versions = [
         // 德鲁伊版本
         druid                : '1.2.9',
         // Swagger版本号
-        swagger              : '3.0.0'
+        swagger              : '3.0.0',
+        // nacos 版本号
+        nacos                : '2.1.1'
 
 ]
 // 依赖库引入配置
@@ -53,7 +55,9 @@ ext.libraries = [
         'mybatis-plus-boot-starter'        : "com.baomidou:mybatis-plus-boot-starter:${versions.mybatisPlus}",
         'mysql-connector-java'             : "mysql:mysql-connector-java:${versions.mysql}",
         'druid'                            : "com.alibaba:druid:${versions.druid}",
-        'springfox-boot-starter'           : "io.springfox:springfox-boot-starter:${versions.swagger}"
+        'springfox-boot-starter'           : "io.springfox:springfox-boot-starter:${versions.swagger}",
+        // nacos 有关依赖库
+        'nacos-client'                     : "com.alibaba.nacos:nacos-client:${versions.nacos}"
 //                'implementation \'com.alibaba:druid:1.2.11\''
 //        implementation 'mysql:mysql-connector-java:8.0.29'
 //        implementation 'com.baomidou:mybatis-plus-boot-starter:3.5.2'

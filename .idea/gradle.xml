@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$/consumer-spring-boot-80" />
             <option value="$PROJECT_DIR$/hong-common" />
             <option value="$PROJECT_DIR$/hong-provider" />
+            <option value="$PROJECT_DIR$/nacos-example" />
           </set>
         </option>
       </GradleProjectSettings>
