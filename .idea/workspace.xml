@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b9eb959-2180-4938-bfaf-9573b18f9cee" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/nacos-example/src/main/java/com/hong/nacos/config/NacosConfigListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nacos-example/src/main/java/com/hong/nacos/config/PublishNacosConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nacos-example/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nacos-example/src/main/java/com/hong/nacos/NacosInstanceList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nacos-example/src/main/java/com/hong/nacos/NacosInstanceListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nacos-example/src/main/java/com/hong/nacos/RegisterNacosInstance.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/dependencies.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,16 +114,43 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.hong.nacos" />
       <recent name="com.hong.nacos.config" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.NacosConfigListener">
+  <component name="RunManager" selected="Application.NacosInstanceList">
     <configuration name="NacosConfigListener" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.hong.nacos.config.NacosConfigListener" />
       <module name="hong-spring-cloud-alibaba.nacos-example.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.hong.nacos.config.*" />
+          <option name="PATTERN" value="com.hong.nacos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NacosInstanceList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.hong.nacos.NacosInstanceList" />
+      <module name="hong-spring-cloud-alibaba.nacos-example.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hong.nacos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NacosInstanceListener" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.hong.nacos.NacosInstanceListener" />
+      <module name="hong-spring-cloud-alibaba.nacos-example.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hong.nacos.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -139,7 +163,7 @@
       <module name="hong-spring-cloud-alibaba.nacos-example.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.hong.nacos.config.*" />
+          <option name="PATTERN" value="com.hong.nacos.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -147,60 +171,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestCreatePassword" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.hong.provider.test.TestCreatePassword" />
-      <module name="hong-spring-cloud-alibaba.hong-provider.test" />
+    <configuration name="RegisterNacosInstance" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.hong.nacos.RegisterNacosInstance" />
+      <module name="hong-spring-cloud-alibaba.nacos-example.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.hong.provider.test.*" />
+          <option name="PATTERN" value="com.hong.nacos.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration name="hong-spring-cloud-alibaba [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="clean" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="hong-spring-cloud-alibaba:hong-provider [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/hong-provider" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="clean" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
     </configuration>
     <configuration name="ProviderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="hong-spring-cloud-alibaba.hong-provider.main" />
@@ -211,11 +193,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.NacosInstanceListener" />
+        <item itemvalue="Application.NacosInstanceList" />
+        <item itemvalue="Application.RegisterNacosInstance" />
         <item itemvalue="Application.NacosConfigListener" />
         <item itemvalue="Application.PublishNacosConfig" />
-        <item itemvalue="Application.TestCreatePassword" />
-        <item itemvalue="Gradle.hong-spring-cloud-alibaba [clean]" />
-        <item itemvalue="Gradle.hong-spring-cloud-alibaba:hong-provider [clean]" />
       </list>
     </recent_temporary>
   </component>
@@ -232,7 +214,7 @@
       <workItem from="1664454603654" duration="543000" />
       <workItem from="1664455235560" duration="6807000" />
       <workItem from="1664865396582" duration="28746000" />
-      <workItem from="1665386248064" duration="33101000" />
+      <workItem from="1665386248064" duration="64453000" />
     </task>
     <task id="LOCAL-00001" summary="修改java-library和api使用问题，增加consumer">
       <created>1664383947914</created>
@@ -269,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665394269267</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="增加nacos publish和listenerdemo">
+      <created>1665621741704</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1665621741704</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -292,7 +281,8 @@
     <MESSAGE value="增加Swagger" />
     <MESSAGE value="增加Swagger登陆保护" />
     <MESSAGE value="增加nacos 启动说明" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加nacos 启动说明" />
+    <MESSAGE value="增加nacos publish和listenerdemo" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加nacos publish和listenerdemo" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
