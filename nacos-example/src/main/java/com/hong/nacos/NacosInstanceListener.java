@@ -4,12 +4,8 @@ import com.alibaba.nacos.api.PropertyKeyConst;
 import com.alibaba.nacos.api.exception.NacosException;
 import com.alibaba.nacos.api.naming.NamingFactory;
 import com.alibaba.nacos.api.naming.NamingService;
-import com.alibaba.nacos.api.naming.listener.Event;
-import com.alibaba.nacos.api.naming.listener.EventListener;
 import com.alibaba.nacos.api.naming.listener.NamingEvent;
-import com.alibaba.nacos.api.naming.pojo.Instance;
 
-import java.util.List;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -36,15 +32,12 @@ public class NacosInstanceListener {
         properties.put(PropertyKeyConst.NAMESPACE, NAMESPACE);
         // 此时发布的并不是配置项，而是服务，需要创建命名服务实例
         NamingService namingService = NamingFactory.createNamingService(properties);
-        namingService.subscribe(INSTANCE_ID, GROUP, new EventListener() {
-            @Override
-            public void onEvent (Event event) {
-                if (event instanceof NamingEvent) {
-                    // 服务名称
-                    System.out.println(((NamingEvent) event).getServiceName());
-                    // 获取所有的实例
-                    System.out.println(((NamingEvent) event).getInstances());
-                }
+        namingService.subscribe(INSTANCE_ID, GROUP, event -> {
+            if (event instanceof NamingEvent) {
+                // 服务名称
+                System.out.println(((NamingEvent) event).getServiceName());
+                // 获取所有的实例
+                System.out.println(((NamingEvent) event).getInstances());
             }
         });
         // 注册成功之后，保证持续像nacos发送心跳

@@ -1,0 +1,5 @@
+spring:
+  cloud:
+    nacos:
+      config: # grpc 通讯配置
+        server-addr: nacos-server:8848  # nacos server 地址配置

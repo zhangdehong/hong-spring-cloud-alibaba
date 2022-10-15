@@ -165,7 +165,16 @@ project(":hong-provider") {
         implementation(libraries.'druid')
         implementation(libraries.'springfox-boot-starter')
         implementation('org.springframework.boot:spring-boot-starter-security')
-
+        // 以下为nacos注册中心所需依赖配置
+        implementation('com.alibaba.cloud:spring-cloud-starter-alibaba-nacos-discovery') {
+            // 移除旧版本的nacos依赖
+            exclude group: 'com.alibaba.nacos', module: 'nacos-client'
+        }
+        implementation('com.alibaba.cloud:spring-cloud-starter-alibaba-nacos-config') {
+            // 移除旧版本的nacos依赖
+            exclude group: 'com.alibaba.nacos', module: 'nacos-client'
+        }
+        implementation(libraries.'nacos-client')
     }
 }
 // 消费端模块
