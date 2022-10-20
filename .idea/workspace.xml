@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b9eb959-2180-4938-bfaf-9573b18f9cee" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/hong-provider/src/main/resources/bootstrap.yml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/nacos-example/src/main/java/com/hong/nacos/config/fault.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hong-provider/src/main/java/com/hong/provider/ProviderApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/hong-provider/src/main/java/com/hong/provider/ProviderApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hong-provider/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/hong-provider/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nacos-example/src/main/java/com/hong/nacos/NacosInstanceListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/nacos-example/src/main/java/com/hong/nacos/NacosInstanceListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hong-provider/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/hong-provider/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/服务配置.txt" beforeDir="false" afterPath="$PROJECT_DIR$/服务配置.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,35 +84,35 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelOrder2": "2",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RequestMappingsPanelWidth2": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "false",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "11",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.22053675",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "spring.configuration.checksum": "373c480817742b9d878d960265af76f2",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelOrder2&quot;: &quot;2&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth2&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.22053675&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;373c480817742b9d878d960265af76f2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mariadb",
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mariadb&quot;,
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.hong.nacos" />
@@ -223,7 +223,11 @@
       <workItem from="1664455235560" duration="6807000" />
       <workItem from="1664865396582" duration="28746000" />
       <workItem from="1665386248064" duration="69188000" />
-      <workItem from="1665809460891" duration="7663000" />
+      <workItem from="1665809460891" duration="18243000" />
+      <workItem from="1666017704568" duration="4994000" />
+      <workItem from="1666076076556" duration="4186000" />
+      <workItem from="1666082545691" duration="17085000" />
+      <workItem from="1666184241592" duration="7443000" />
     </task>
     <task id="LOCAL-00001" summary="修改java-library和api使用问题，增加consumer">
       <created>1664383947914</created>
@@ -274,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665759001077</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="增加部门微服务像nacos注册">
+      <created>1665823164454</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1665823164454</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,7 +310,8 @@
     <MESSAGE value="增加nacos 启动说明" />
     <MESSAGE value="增加nacos publish和listenerdemo" />
     <MESSAGE value="增加nacos 实例数据配置发布和管理" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加nacos 实例数据配置发布和管理" />
+    <MESSAGE value="增加部门微服务像nacos注册" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加部门微服务像nacos注册" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

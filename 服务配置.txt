@@ -23,4 +23,27 @@ nacos 2.x  端口
 9848  服务端gRPC请求服务端端口，用于服务间同步等。该端口的配置为"主端口+1001偏移量"
 
 
+1.NacosDiscoveryAutoConfiguration：
+实现了nacos 服务发现的自动装配，
+内部有NacosDiscoveryProperties 类是application.yml配置文件绑定在一起的
+2.RibbonNacosAutoConfiguration：
+实现了基于nacos的负载均衡配置
+3 NacosDiscoveryEndpointAutoConfiguration
+终端的自动配置服务，当醒目中配置了actuator依赖库之后，就可以获取nacos的健康状态信息
+4 NacosServiceRegistryAutoConfiguration
+nacos 服务自动配置
+5 NacosDiscoveryClientConfiguration
+所有服务的提供端，需要在客户端配置发现服务，而后才可以注册数据的获取
+6 NacosReactiveDiscoveryClientConfiguration
+基于响应式编程的服务发现与注册配置
+7 NacosConfigServerAutoConfiguration
+nacos配置服务的自动装配
+8 NacosDiscoveryClientConfigServiceBootstrapConfiguration
+nacos 2.x之后使用的是grpc通信的 所以要配置与之匹配的bootstrap.yml,新版本中所有的所有的服务注册都是在此类中实现的
+
+
+
+
+
+
 
