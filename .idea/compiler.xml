@@ -9,7 +9,9 @@
           <entry name="$PROJECT_DIR$/../../../maven/repository/org/projectlombok/lombok/1.18.20/lombok-1.18.20.jar" />
         </processorPath>
         <module name="hong-spring-cloud-alibaba.hong-provider.main" />
+        <module name="hong-spring-cloud-alibaba.hong-provider-8003.main" />
         <module name="hong-spring-cloud-alibaba.consumer-spring-boot-80.main" />
+        <module name="hong-spring-cloud-alibaba.hong-provider-8002.main" />
         <module name="hong-spring-cloud-alibaba.hong-common.main" />
         <module name="hong-spring-cloud-alibaba.nacos-example.main" />
       </profile>

@@ -1,6 +1,8 @@
 rootProject.name = 'hong-spring-cloud-alibaba'
 include 'hong-common'
 include 'hong-provider'
+include 'hong-provider-8002'
+include 'hong-provider-8003'
 include 'consumer-spring-boot-80'
 include 'nacos-example'
 

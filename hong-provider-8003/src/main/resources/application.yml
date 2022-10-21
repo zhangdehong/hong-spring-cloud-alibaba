@@ -1,6 +1,6 @@
 server:
   # 端口
-  port: 8001
+  port: 8003
 mybatis-plus:
   # 别名
   type-aliases-package: com.hong.provider.vo
@@ -26,7 +26,7 @@ spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/alibaba-cloud
+    url: jdbc:mysql://localhost:3306/alibaba-cloud-8003
     username: root
     password: hong#0618
     dynamic:
