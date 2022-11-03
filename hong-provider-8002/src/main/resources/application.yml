@@ -6,7 +6,7 @@ mybatis-plus:
   type-aliases-package: com.hong.provider.vo
 spring:
   application: # 配置应用信息
-    name: hong.dept.provider   # 配置应用名称
+    name: hong.dept.provider02   # 配置应用名称
   cloud: # cloud配置
     nacos: # nacos 配置
       discovery: # 服务发现

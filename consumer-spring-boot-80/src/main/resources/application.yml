@@ -15,8 +15,13 @@ spring:
         username: hong
         password: hong
         metadata: # 配置元数据项
-          version: 1.0 #自定义元数据项
+          version: 1.0 # 自定义元数据项
           company: zhangdehong
           url: www.henley.com
           author: zhangdehong
           register-enabled: false  #消费端不注册
+
+ribbon:
+  eager-load:
+    clients: hong.dept.consumer
+    enabled: true  # 采用饿汉式

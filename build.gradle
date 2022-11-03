@@ -151,6 +151,7 @@ project(":hong-common") {
     // 配置需要的依赖库
     dependencies {
         api 'org.springframework.boot:spring-boot-starter-web:2.3.12.RELEASE'  // SpringBoot依赖
+        api 'org.snmp4j:snmp4j:3.7.3'
     }
 }
 // dept provider

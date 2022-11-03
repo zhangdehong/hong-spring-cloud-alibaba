@@ -11,3 +11,48 @@ GET http://localhost:80/consumer/dept/split?number=1&limit=1&column=dname&keywor
 
 ###
 GET http://localhost:80/consumer/dept/add?dname=人脸识别&loc=兰州
+
+
+###
+POST https://mpapi.ygr.iyougu.com/mpapi/ygldt/v1/opus/newVoteResult
+
+accept	*/*
+content-type	application/json
+content-length	190
+accept-language	zh-CN,zh-Hans;q=0.9
+user-agent	Mozilla/5.0 (iPhone; CPU iPhone OS 11_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E217 MicroMessenger/6.8.0(0x16080000) NetType/WIFI Language/en Branch/Br_trunk MiniProgramEnv/Mac
+referer	https://servicewechat.com/wxe0b4a0eb543e00c6/459/page-frame.html
+accept-encoding	gzip, deflate, br
+
+{
+	"data": "8b0226a",
+	"encrypt": "zPDUsFHj6mirvIBkBmWuUA==",
+	"sessionId": "38dcd954a7894a8aa3685655cb7dfdb7",
+	"logInOrgaId": "",
+	"sign": "80f89c71641b45412e8de7b6bac202ce",
+	"appId": "wxe0b4a0eb543e00c6"
+}
+
+###
+POST https://mpapi.ygr.iyougu.com/mpapi/ygldt/v1/opus/voteAction
+
+accept	*/*
+content-type	application/json
+content-length	218
+accept-language	zh-CN,zh-Hans;q=0.9
+user-agent	Mozilla/5.0 (iPhone; CPU iPhone OS 11_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E217 MicroMessenger/6.8.0(0x16080000) NetType/WIFI Language/en Branch/Br_trunk MiniProgramEnv/Mac
+referer	https://servicewechat.com/wxe0b4a0eb543e00c6/459/page-frame.html
+accept-encoding	gzip, deflate, br
+
+
+{
+	"data": {
+		"opusId": 17898546,
+		"activityId": 4850
+	},
+	"encrypt": "nqn0Vh5vDD4U/+AHvt056w==",
+	"sessionId": "38dcd954a7894a8aa3685655cb7dfdb7",
+	"logInOrgaId": "",
+	"sign": "6b43569cd0be19de00cba846509a2326",
+	"appId": "wxe0b4a0eb543e00c6"
+}

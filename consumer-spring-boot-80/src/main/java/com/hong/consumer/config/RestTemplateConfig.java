@@ -2,6 +2,7 @@ package com.hong.consumer.config;
 
 import com.hong.consumer.interceptor.CloudServiceHttpInterceptor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;
@@ -25,9 +26,10 @@ public class RestTemplateConfig {
 
     /**
      * 发送http请求和接受http响应的rest template
-     *
+     * @LoadBalanced 实现客户端负载均衡
      * @return RestTemplate
      */
+    @LoadBalanced
     @Bean
     public RestTemplate restTemplate () {
         RestTemplate template = new RestTemplate();

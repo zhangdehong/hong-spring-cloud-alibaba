@@ -21,7 +21,7 @@ public class DeepBeanUtils extends BeanUtils {
     /**
      * 实现list集合对象的拷贝处理
      *
-     * @param source 原始对象
+     * @param sources 原始对象
      * @param target 目标对象集合
      * @param <S>    源对象类型
      * @param <T>    目标对象类型

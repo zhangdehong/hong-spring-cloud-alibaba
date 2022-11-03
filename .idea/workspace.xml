@@ -5,45 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b9eb959-2180-4938-bfaf-9573b18f9cee" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/consumer-spring-boot-80/src/main/java/com/hong/consumer/util/RandomAccessUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hong-provider-8002/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hong-provider-8002/src/main/java/com/hong/provider/ProviderApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hong-provider-8002/src/main/java/com/hong/provider/config/MyBatisConfigPlus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hong-provider-8002/src/main/java/com/hong/provider/config/SwaggerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hong-provider-8002/src/main/java/com/hong/provider/config/SwaggerWebSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hong-provider-8002/src/main/java/com/hong/provider/controller/DeptController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hong-provider-8002/src/main/java/com/hong/provider/dao/IDeptDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hong-provider-8002/src/main/java/com/hong/provider/service/impl/DeptServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hong-provider-8002/src/main/java/com/hong/provider/vo/Dept.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hong-provider-8002/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hong-provider-8002/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hong-provider-8002/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hong-provider-8002/src/test/java/com/hong/provider/test/TestCreatePassword.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hong-provider-8002/src/test/java/com/hong/provider/test/TestDeptService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hong-provider-8003/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hong-provider-8003/src/main/java/com/hong/provider/ProviderApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hong-provider-8003/src/main/java/com/hong/provider/config/MyBatisConfigPlus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hong-provider-8003/src/main/java/com/hong/provider/config/SwaggerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hong-provider-8003/src/main/java/com/hong/provider/config/SwaggerWebSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hong-provider-8003/src/main/java/com/hong/provider/controller/DeptController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hong-provider-8003/src/main/java/com/hong/provider/dao/IDeptDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hong-provider-8003/src/main/java/com/hong/provider/service/impl/DeptServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hong-provider-8003/src/main/java/com/hong/provider/vo/Dept.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hong-provider-8003/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hong-provider-8003/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hong-provider-8003/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hong-provider-8003/src/test/java/com/hong/provider/test/TestCreatePassword.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hong-provider-8003/src/test/java/com/hong/provider/test/TestDeptService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-spring-boot-80/src/main/java/com/hong/consumer/ribbon/DefaultServerList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hong-common/src/main/java/com/hong/common/util/SnmpUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hong-provider/src/test/java/com/hong/provider/test/TestConfigurationBasedServerList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hong-provider/src/test/java/com/hong/provider/test/TestZoneAwareLoadBalancer.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/nacos-example/src/main/java/com/hong/nacos/config/fault.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer-spring-boot-80/src/main/java/com/hong/consumer/StartConsumerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-spring-boot-80/src/main/java/com/hong/consumer/StartConsumerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer-spring-boot-80/src/main/java/com/hong/consumer/config/RestTemplateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-spring-boot-80/src/main/java/com/hong/consumer/config/RestTemplateConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/consumer-spring-boot-80/src/main/java/com/hong/consumer/controller/DeptConsumerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-spring-boot-80/src/main/java/com/hong/consumer/controller/DeptConsumerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer-spring-boot-80/src/main/profiles/http/Test.http" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-spring-boot-80/src/main/profiles/http/Test.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/consumer-spring-boot-80/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-spring-boot-80/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hong-provider/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/hong-provider/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hong-common/src/main/java/com/hong/common/util/DeepBeanUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/hong-common/src/main/java/com/hong/common/util/DeepBeanUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hong-provider-8002/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/hong-provider-8002/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,62 +101,67 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelOrder2": "2",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RequestMappingsPanelWidth2": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "false",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "11",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.22053675",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
-    "spring.configuration.checksum": "373c480817742b9d878d960265af76f2",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelOrder2&quot;: &quot;2&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth2&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.22053675&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;185675f7da4f09a2e10dacb2737affab&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mariadb",
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mariadb&quot;,
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.hong.nacos" />
       <recent name="com.hong.nacos.config" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.StartConsumerApplication">
-    <configuration name="hong-spring-cloud-alibaba [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="clean" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
+  <component name="RunManager" selected="Application.TestConfigurationBasedServerList">
+    <configuration name="SnmpUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.hong.common.util.SnmpUtil" />
+      <module name="hong-spring-cloud-alibaba.hong-common.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hong.common.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestConfigurationBasedServerList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.hong.consumer.TestConfigurationBasedServerList" />
+      <module name="hong-spring-cloud-alibaba.consumer-spring-boot-80.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hong.consumer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="Test | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/consumer-spring-boot-80/src/main/profiles/http/Test.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
@@ -191,9 +170,6 @@
       <method v="2" />
     </configuration>
     <configuration name="Test | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/consumer-spring-boot-80/src/main/profiles/http/Test.http" index="3" requestIdentifier="#3" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="Test | #4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/consumer-spring-boot-80/src/main/profiles/http/Test.http" index="4" requestIdentifier="#4" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="ProviderApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -226,11 +202,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestConfigurationBasedServerList" />
+        <item itemvalue="Application.SnmpUtil" />
         <item itemvalue="HTTP Request.Test | #2" />
-        <item itemvalue="HTTP Request.Test | #3" />
-        <item itemvalue="HTTP Request.Test | #4" />
         <item itemvalue="HTTP Request.Test | #1" />
-        <item itemvalue="Gradle.hong-spring-cloud-alibaba [clean]" />
+        <item itemvalue="HTTP Request.Test | #3" />
       </list>
     </recent_temporary>
   </component>
@@ -252,7 +228,13 @@
       <workItem from="1666017704568" duration="4994000" />
       <workItem from="1666076076556" duration="4186000" />
       <workItem from="1666082545691" duration="17085000" />
-      <workItem from="1666184241592" duration="27796000" />
+      <workItem from="1666184241592" duration="30904000" />
+      <workItem from="1666408410334" duration="590000" />
+      <workItem from="1666409776373" duration="29597000" />
+      <workItem from="1666840363709" duration="11226000" />
+      <workItem from="1666939230333" duration="11732000" />
+      <workItem from="1667045261348" duration="28855000" />
+      <workItem from="1667436095367" duration="340000" />
     </task>
     <task id="LOCAL-00001" summary="修改java-library和api使用问题，增加consumer">
       <created>1664383947914</created>
@@ -317,7 +299,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666245363734</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="consumer使用DiscoveryClient改造">
+      <created>1666346825147</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1666346825148</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -344,7 +333,19 @@
     <MESSAGE value="增加nacos 实例数据配置发布和管理" />
     <MESSAGE value="增加部门微服务像nacos注册" />
     <MESSAGE value="增加服务注册nacos" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加服务注册nacos" />
+    <MESSAGE value="consumer使用DiscoveryClient改造" />
+    <option name="LAST_COMMIT_MESSAGE" value="consumer使用DiscoveryClient改造" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/hong-common/src/main/java/com/hong/common/util/SnmpUtil.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
