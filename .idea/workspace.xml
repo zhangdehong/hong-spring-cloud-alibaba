@@ -5,19 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b9eb959-2180-4938-bfaf-9573b18f9cee" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/consumer-spring-boot-80/src/main/java/com/hong/consumer/ribbon/DefaultServerList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hong-common/src/main/java/com/hong/common/util/SnmpUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hong-provider/src/test/java/com/hong/provider/test/TestConfigurationBasedServerList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hong-provider/src/test/java/com/hong/provider/test/TestZoneAwareLoadBalancer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer-spring-boot-80/src/test/java/com/hong/consumer/TestServerListUpdate.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/nacos-example/src/main/java/com/hong/nacos/config/fault.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer-spring-boot-80/src/main/java/com/hong/consumer/config/RestTemplateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-spring-boot-80/src/main/java/com/hong/consumer/config/RestTemplateConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer-spring-boot-80/src/main/java/com/hong/consumer/controller/DeptConsumerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-spring-boot-80/src/main/java/com/hong/consumer/controller/DeptConsumerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer-spring-boot-80/src/main/profiles/http/Test.http" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-spring-boot-80/src/main/profiles/http/Test.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer-spring-boot-80/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-spring-boot-80/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hong-common/src/main/java/com/hong/common/util/DeepBeanUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/hong-common/src/main/java/com/hong/common/util/DeepBeanUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hong-provider-8002/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/hong-provider-8002/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer-spring-boot-80/src/test/java/com/hong/consumer/TestZoneAwareLoadBalancer.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer-spring-boot-80/src/test/java/com/hong/consumer/TestZoneAwareLoadBalancer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +127,7 @@
       <recent name="com.hong.nacos.config" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestConfigurationBasedServerList">
+  <component name="RunManager" selected="Application.TestServerListUpdate">
     <configuration name="SnmpUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.hong.common.util.SnmpUtil" />
       <module name="hong-spring-cloud-alibaba.hong-common.main" />
@@ -163,13 +154,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestServerListUpdate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.hong.consumer.TestServerListUpdate" />
+      <module name="hong-spring-cloud-alibaba.consumer-spring-boot-80.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hong.consumer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Test | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/consumer-spring-boot-80/src/main/profiles/http/Test.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="Test | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/consumer-spring-boot-80/src/main/profiles/http/Test.http" index="2" requestIdentifier="#2" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="Test | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/consumer-spring-boot-80/src/main/profiles/http/Test.http" index="3" requestIdentifier="#3" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="ProviderApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -202,11 +203,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestServerListUpdate" />
         <item itemvalue="Application.TestConfigurationBasedServerList" />
         <item itemvalue="Application.SnmpUtil" />
         <item itemvalue="HTTP Request.Test | #2" />
         <item itemvalue="HTTP Request.Test | #1" />
-        <item itemvalue="HTTP Request.Test | #3" />
       </list>
     </recent_temporary>
   </component>
@@ -234,7 +235,9 @@
       <workItem from="1666840363709" duration="11226000" />
       <workItem from="1666939230333" duration="11732000" />
       <workItem from="1667045261348" duration="28855000" />
-      <workItem from="1667436095367" duration="340000" />
+      <workItem from="1667436095367" duration="10428000" />
+      <workItem from="1667522844425" duration="4108000" />
+      <workItem from="1667570357513" duration="3188000" />
     </task>
     <task id="LOCAL-00001" summary="修改java-library和api使用问题，增加consumer">
       <created>1664383947914</created>
@@ -306,7 +309,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666346825148</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="ribbon相关test测试demo">
+      <created>1667436766230</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1667436766230</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -334,7 +344,8 @@
     <MESSAGE value="增加部门微服务像nacos注册" />
     <MESSAGE value="增加服务注册nacos" />
     <MESSAGE value="consumer使用DiscoveryClient改造" />
-    <option name="LAST_COMMIT_MESSAGE" value="consumer使用DiscoveryClient改造" />
+    <MESSAGE value="ribbon相关test测试demo" />
+    <option name="LAST_COMMIT_MESSAGE" value="ribbon相关test测试demo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

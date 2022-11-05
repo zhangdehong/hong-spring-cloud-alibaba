@@ -2,12 +2,10 @@ package com.hong.consumer;
 
 import com.netflix.loadbalancer.LoadBalancerStats;
 import com.netflix.loadbalancer.Server;
-import com.netflix.loadbalancer.ServerStats;
 import com.netflix.loadbalancer.ZoneAwareLoadBalancer;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.function.BiConsumer;
 
 /**
  * @Author: ZhangDeHong
