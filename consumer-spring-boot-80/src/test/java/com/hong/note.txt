@@ -1,0 +1,52 @@
+1.ServerListFilter -> AbstractServerListFilter  -> ZoneAffinityServerListFilter
+
+
+1 判断是否有指定的区域配置、或者没有排除等相关的处理，以及存在有服务列表
+@Override
+public List<T> getFilteredListOfServers(List<T> servers) {
+    if (zone != null && (zoneAffinity || zoneExclusive) && servers !=null && servers.size() > 0){
+        List<T> filteredServers = Lists.newArrayList(Iterables.filter(
+                servers, this.zoneAffinityPredicate.getServerOnlyPredicate()));
+        if (shouldEnableZoneAffinity(filteredServers)) {
+            return filteredServers;
+        } else if (zoneAffinity) {
+            overrideCounter.increment();
+        }
+    }
+    return servers;
+}
+
+2 在进行区域判断的时候、会根据之前的负载均衡统计的结果来实现处理
+private boolean shouldEnableZoneAffinity(List<T> filtered) {
+    if (!zoneAffinity && !zoneExclusive) {
+        return false;
+    }
+    if (zoneExclusive) {
+        return true;
+    }
+    // 负载均衡的统计器
+    LoadBalancerStats stats = getLoadBalancerStats();
+    if (stats == null) {
+        return zoneAffinity;
+    } else {
+        logger.debug("Determining if zone affinity should be enabled with given server list: {}", filtered);
+        ZoneSnapshot snapshot = stats.getZoneSnapshot(filtered);
+        // 获取调用的次数
+        double loadPerServer = snapshot.getLoadPerServer();
+        // 获取实例数量
+        int instanceCount = snapshot.getInstanceCount();
+        // 故障实例百分比
+        int circuitBreakerTrippedCount = snapshot.getCircuitTrippedCount();
+        if (((double) circuitBreakerTrippedCount) / instanceCount >=
+                // 故障实例百分比
+                blackOutServerPercentageThreshold.get()
+                || loadPerServer >= activeReqeustsPerServerThreshold.get()
+                || (instanceCount - circuitBreakerTrippedCount) < availableServersThreshold.get()) {
+            logger.debug("zoneAffinity is overriden. blackOutServerPercentage: {}, activeReqeustsPerServer: {}, availableServers: {}",
+                    new Object[] {(double) circuitBreakerTrippedCount / instanceCount,  loadPerServer, instanceCount - circuitBreakerTrippedCount});
+            return false;
+        } else {
+            return true;
+        }
+    }
+}

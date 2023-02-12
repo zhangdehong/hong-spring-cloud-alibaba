@@ -242,5 +242,13 @@ project(":nacos-example") {
         implementation project(':hong-common')
         // nacos 标准模块
         implementation(libraries.'nacos-client')
+        implementation('com.alibaba.cloud:spring-cloud-starter-alibaba-nacos-discovery') {
+            // 移除旧版本的nacos依赖
+            exclude group: 'com.alibaba.nacos', module: 'nacos-client'
+        }
+        implementation('com.alibaba.cloud:spring-cloud-starter-alibaba-nacos-config') {
+            // 移除旧版本的nacos依赖
+            exclude group: 'com.alibaba.nacos', module: 'nacos-client'
+        }
     }
 }

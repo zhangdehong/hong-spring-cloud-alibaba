@@ -17,6 +17,7 @@ public class TestServerListUpdate {
 
     public static void main (String[] arges) throws InterruptedException {
 
+        // 实例数据  通过nacos抓取到的实例内容也就是以下数据
         String instances = "10.10.10.3:8001,10.10.10.4:8002,10.10.10.5:8003";
         DefaultClientConfigImpl clientConfig = new DefaultClientConfigImpl();
         // 保存实例数据
