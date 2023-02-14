@@ -15,7 +15,7 @@ import java.util.List;
  * @Describe: TODO
  * @Date Create by  21:59 2022/10/26
  */
-@Component
+// @Component
 @Slf4j
 public class DefaultServerList implements ServerList<Server> {
 
@@ -39,8 +39,8 @@ public class DefaultServerList implements ServerList<Server> {
     public List<Server> getUpdatedListOfServers () {
         // 定义保存服务列表
         List<Server> allServers = Lists.newArrayList();
-        allServers.add(new Server("127.0.0.1", 8001));
-        allServers.add(new Server("127.0.0.1", 8002));
+        // allServers.add(new Server("127.0.0.1", 8001));
+        // allServers.add(new Server("127.0.0.1", 8002));
         log.info("更新服务列表 {}", allServers);
         return allServers;
     }

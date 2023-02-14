@@ -50,3 +50,36 @@ private boolean shouldEnableZoneAffinity(List<T> filtered) {
         }
     }
 }
+
+
+public interface IRule{
+
+    // 实现负载均衡之中实例服务的选择操作  根据指定 的KEY 通过服务列表获取
+    public Server choose(Object key);
+    // 负载均衡器配置
+    public void setLoadBalancer(ILoadBalancer lb);
+    // 获取该规则下所使用的负载均衡器
+    public ILoadBalancer getLoadBalancer();
+}
+
+public interface ILoadBalancer {
+
+    // 保存加载到的全部服务列表数据
+	public void addServers(List<Server> newServers);
+
+	// 选择一个服务的实例
+	public Server chooseServer(Object key);
+
+	// 服务下线标记
+	public void markServerDown(Server server);
+
+	// 返回所有可用的服务列表
+	@Deprecated
+	public List<Server> getServerList(boolean availableOnly);
+
+	// 返回所以可达的服务列表
+    public List<Server> getReachableServers();
+
+    // 返回所有可用以及不可用的服务列表
+	public List<Server> getAllServers();
+}

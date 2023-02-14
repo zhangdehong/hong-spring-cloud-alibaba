@@ -17,7 +17,7 @@ import org.springframework.context.annotation.Configuration;
 public class MyBatisConfigPlus {
 
     @Bean
-    public MybatisPlusInterceptor getMybatisPlusInterpector () {
+    public MybatisPlusInterceptor getMybatisPlusInterceptor () {
         MybatisPlusInterceptor interceptor = new MybatisPlusInterceptor();
         interceptor.addInnerInterceptor(
                 // 分页处理
