@@ -1,7 +1,8 @@
 package study.hong.config.ribbon;
 
-import com.netflix.loadbalancer.IRule;
-import com.netflix.loadbalancer.RandomRule;
+import com.netflix.client.config.IClientConfig;
+import com.netflix.loadbalancer.*;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -15,6 +16,15 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class DeptProviderRibbonConfig {
 
+    @Autowired
+    private IClientConfig clientConfig;
+
+    @Autowired
+    private ServerList serverList;
+
+    @Autowired
+    private ServerListUpdater serverListUpdater;
+
     /**
      * 自定义的负载均衡规则
      * @return
@@ -23,6 +33,15 @@ public class DeptProviderRibbonConfig {
     public IRule ribbonRule () {
         // 随机读取
         return new RandomRule();
+    }
+
+    @Bean
+    public ILoadBalancer loadBalancer(){
+        DynamicServerListLoadBalancer<Server> loadBalancer = new DynamicServerListLoadBalancer<>(this.clientConfig);
+        loadBalancer.setServerListImpl(this.serverList);
+        loadBalancer.setServerListUpdater(this.serverListUpdater);
+        loadBalancer.setRule(this.ribbonRule());
+        return loadBalancer;
     }
 
 }

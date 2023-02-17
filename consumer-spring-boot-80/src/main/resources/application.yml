@@ -25,3 +25,8 @@ ribbon:
   eager-load:
     clients: hong.dept.consumer
     enabled: true  # 采用饿汉式
+
+#hong.dept.provider:  # 微服务id
+#  ribbon:
+#    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule   # IRule 子类
+#    NFLoadBalancerClassName: com.netflix.loadbalancer.DynamicServerListLoadBalancer   #ILoadBalancer
